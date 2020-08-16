@@ -1,38 +1,96 @@
+body {
+  background-color: rgb(137,143,156);
+  color: rgb(137,143,156);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.big-container {
+  min-height: calc(100vh - 75px);
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  font-size: 32pt;
+}
+#wrapper {
+  margin-top: 10em;
+}
+#quote-box {
+  border-radius: 3px;
+  position: relative;
+  width: 450px;
+  padding: 50px 50px;
+  display: table;
+  background-color: #fff;
+}
+
+#quote-box .quote-text {
+  text-align: center;
+  width: 450px;
+  height: auto;
+  clear: both;
+  font-weight: 500;
+  font-size: 1.75em;
+}
+
+#quote-box .quote-author {
+  width: 450px;
+  height: auto;
+  clear: both;
+  padding-top: 20px;
+  font-size: 1em;
+  text-align: right;
+}
+
+#quote-box .buttons {
+  width: 450px;
+  margin: auto;
+  display: block;
+}
+
+#quote-box .buttons .button#tweet-quote, #quote-box .buttons .button#tumblr-quote, #quote-box .buttons .button#facebook-quote {
+  float: left;
+  padding: 0px;
+  padding-top: 8px;
+  text-align: center;
+  font-size: 1.2em;
+  margin-right: 5px;
+  height: 30px;
+  width: 40px;
+  background-color: rgb(137,143,156);
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+#quote-box .buttons .button {
+  height: 38px;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  background-color: #333;
+  outline: none;
+  font-size: 0.85em;
+  padding: 8px 18px 6px 18px;
+  margin-top: 30px;
+  opacity: 1;
+  cursor: pointer;
+  float: right;
+  background-color: rgb(137,143,156);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+footer {
+    text-align: center;
+    color: navy;
+    font-size: 0.9em;
+    padding: 15px;
+    margin-bottom: -15px;
 }
